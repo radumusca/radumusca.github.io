@@ -426,8 +426,8 @@ body,html{
     background: #FF6868;
   }
 
-
-@media only screen and (max-width: 768px) {
+/* 768 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     /* For mobile phones: */
     [class*="content__container"] {
         width: 100%;
