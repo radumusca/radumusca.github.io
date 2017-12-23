@@ -21,11 +21,39 @@ Array.from(buttons).forEach(function(button) {
     }
   });
 });
-function scrollTop(){
-  if(document.body.scrollTop > 20 || document.documentElement.scrollTop >20){
-    document.getElementById('btn_ontop').style.display="block";
+
+
+/* Script: */
+$("a").on('click', function(event) {
+
+if (this.hash !== "") {
+  event.preventDefault();
+  var hash = this.hash;
+
+  $('html, body').animate({
+    scrollTop: $(hash).offset().top
+  }, 800, function(){});
+};
+});
+
+/* Script: OnTop*/
+$(window).scroll(function(){
+  scrollFunction();
+})
+
+function scrollFunction(){
+  if($(document).scrollTop() >20){
+    $(".btn_ontop").show();
   }
   else{
-    document.getElementById('btn_ontop').style.display="none";
+    $(".btn_ontop").hide();
   }
 }
+
+function scrollToTop() {
+  $(document).scrollTop(0);
+}
+
+$('.menu__responsive').click(function(){
+  $('.menu').toggle();
+})

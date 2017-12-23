@@ -253,59 +253,8 @@
     </footer>
   </main>
 
-  <script src="./js/javascript.js"></script>
   <script src="./js/jquery-3.2.1.min.js"></script>
-  <script>
-
-
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-      });
-    } // End if
-  });
-
-
-  $(window).scroll(function(){
-      scrollFunction();
-  })
-
-    function scrollFunction(){
-      if($(document).scrollTop() >20){
-        $(".btn_ontop").show();
-      }
-      else{
-        $(".btn_ontop").hide();
-      }
-    }
-
-    function scrollToTop() {
-      $(document).scrollTop(0);
-
-    }
-
-    $('.menu__responsive').click(function(){
-      $('.menu').toggle();
-
-    })
-
-
-
-
-</script>
+  <script src="./js/javascript.js"></script>
+  
 </body>
 </html>
