@@ -432,7 +432,7 @@ a{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   [class*="content__container"] {
       width: 100%;
-      margin: 0px;
+      margin-left: -1%;
   }
 
   .content{
@@ -472,7 +472,6 @@ a{
 
     .menu__responsive{
       display: block;
-      margin-left: -1.5%;
     }
 
   .skills__item{
@@ -518,7 +517,7 @@ a{
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
   [class*="content__container"] {
       width: 100%;
-      margin: 0;
+      margin: -1%;
   }
   .content{
     width: 90%;
@@ -557,7 +556,6 @@ a{
 
     .menu__responsive{
       display: block;
-      margin-left: -1.5%;
     }
 
   .skills__item{
