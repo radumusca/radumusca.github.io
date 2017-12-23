@@ -5,6 +5,9 @@ body,html{
   font-family: 'Work Sans', sans-serif;
 }
 
+a{
+  text-decoration: none;
+}
 .content{
   margin: 5% auto;
   width: 70%;
@@ -64,6 +67,7 @@ body,html{
 .content__container{
   display: inline-block;
   width: 72.70%;
+  margin-left: 1%;
   padding: 5px;
 }
 
@@ -428,7 +432,7 @@ body,html{
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   [class*="content__container"] {
       width: 100%;
-      margin: 0;
+      margin: 0px;
   }
 
   .content{
@@ -592,27 +596,6 @@ body,html{
     height: auto;
   }
 
-  .btn_ontop {
-      display: none;
-      position: fixed;
-      width: 100%;
-      bottom:0;
-      border-radius: 0;
-      background-color: #FF6868;
-      font-size: 22px;
-      color: #fff;
-      cursor: pointer;
-      padding: 10px 20px;
-      right: 0;
-      box-sizing: border-box;
-      opacity:0.9;
-    }
-
-    .btn_ontop:hover{
-      opacity: 1;
-      color:#fff;
-    }
-
 }
 
 
@@ -636,10 +619,6 @@ body,html{
 
   .divider{
     display: block;
-  }
-
-  a{
-    text-decoration: none;
   }
 
   .menu__item{
