@@ -530,3 +530,153 @@ body,html{
       }
 
 }
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* For mobile phones: */
+  [class*="content__container"] {
+      width: 100%;
+      margin: 0;
+  }
+  .content{
+    width: 90%;
+  }
+
+  .side__content{
+    width: 100%;
+  }
+
+  .divider{
+    display: none;
+  }
+
+
+  .content__container .title{
+    text-align: center;
+  }
+
+  .content__container .subtitle{
+    text-align: center;
+  }
+
+  .menu{
+    text-align: center;
+    display: block;
+  }
+  a{
+    text-decoration: none;
+  }
+  .menu__item{
+    display: block;
+    width:80%;
+    margin:10px auto;
+  }
+
+  .menu__responsive{
+    display: block;
+    margin-left: -1.5%;
+  }
+
+  .skills__item{
+    width:100%;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+  }
+
+  .skills__item:last-child{
+    margin-bottom: 0px;
+  }
+
+  .job__year{
+      text-align: center;
+      margin: 0 auto;
+      float: none;
+  }
+  .job__description{
+    text-align: center;
+    display: block;
+    margin: 15px 0 0 0;
+  }
+
+  .languages__table{
+    font-size: 14px;
+  }
+
+  .project__item{
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: inline-block;
+  }
+  .project__image img{
+    width: 100%;
+    height: auto;
+  }
+
+  .btn_ontop {
+      display: none;
+      position: fixed;
+      width: 100%;
+      bottom:0;
+      border-radius: 0;
+      background-color: #FF6868;
+      font-size: 22px;
+      color: #fff;
+      cursor: pointer;
+      padding: 10px 20px;
+      right: 0;
+      box-sizing: border-box;
+      opacity:0.9;
+    }
+
+    .btn_ontop:hover{
+      opacity: 1;
+      color:#fff;
+    }
+
+}
+
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* For mobile phones: */
+  [class*="content__container"] {
+      width: 72%;
+
+  }
+  .content{
+    width: auto;
+    box-sizing: border-box;
+    margin: 2%;
+    padding: 5px;
+  }
+
+  .side__content{
+    width: 24%;
+    margin-left: 1%;
+
+  }
+
+  .divider{
+    display: block;
+  }
+
+
+
+  a{
+    text-decoration: none;
+  }
+  .menu__item{
+    width:16%;
+  }
+
+  .social__btn{
+    width:24%;
+    margin: 2px;
+  }
+
+  .project__item{
+    width:32.7%;
+  }
+
+}
