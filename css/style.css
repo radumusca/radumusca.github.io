@@ -378,9 +378,9 @@ body,html{
     color:#fff;
     border-radius: 3px;
     width:24%;
-    height:50px;
+    height:40px;
     margin: 5px;
-    padding:25px 5px 5px 5px;
+    padding:20px 5px 10px 5px;
     font-size: 26px;
     text-align: center;
     display: inline-block;
@@ -410,7 +410,7 @@ body,html{
     z-index: 99;
     border: none;
     outline: none;
-    background-color: #FF6868;
+    background-color: #fff;
     font-size: 22px;
     color: #999;
     cursor: pointer;
@@ -422,7 +422,8 @@ body,html{
   }
 
   .btn_ontop:hover{
-    color:#666;
+    color:#fff;
+    background: #FF6868;
   }
 
 
